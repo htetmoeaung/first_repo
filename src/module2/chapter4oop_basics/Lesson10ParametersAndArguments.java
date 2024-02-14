@@ -1,6 +1,6 @@
 package module2.chapter4oop_basics;
 
-public class Lesson10 {
+public class Lesson10ParametersAndArguments {
     static void calculator(int num1,int num2){
         int a =num1;
         int b =num2;
