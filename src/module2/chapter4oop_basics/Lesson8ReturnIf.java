@@ -14,16 +14,17 @@ public class Lesson8ReturnIf {
         return "can't";
     }
 
-    static void validate1(){
+    static String validate1(){
         System.out.print("Enter Your Age = ");
         int userinput1 = new Scanner(System.in).nextInt();
 
         if (userinput1 > 18) {
             System.out.println("You can vote");
         }
-        else {
-            System.out.println("you can't vote");
-        }
+//        else {
+//            System.out.println("you can't vote");
+//        }
+        return "you can't vote";
     }
 
 
