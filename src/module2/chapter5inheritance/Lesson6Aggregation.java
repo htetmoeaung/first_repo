@@ -1,6 +1,6 @@
 package module2.chapter5inheritance;
 
-public class Lesson7Aggregation {
+public class Lesson6Aggregation {
     public static void main(String[] args) {
         Info htetinfo = new Info(1, "htet", 19);
         Address htetaddress = new Address("Yesagyo", 169);

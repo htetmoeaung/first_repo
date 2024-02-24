@@ -26,3 +26,6 @@ class Dog extends Animal{
 //Inheritance
 //Single Inheritance
 //Multi-level Inheritance
+//Hierarchical Inheritance
+//Multiple Inheritance
+//Hybrid Inheritance
