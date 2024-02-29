@@ -3,45 +3,30 @@ package module2.chapter6polymorphism;
 import java.util.Scanner;
 
 public class Lesson3MethodOverloadingExe {
-    static Scanner scan = new Scanner(System.in);
-
-    static double storedphonenumber;
-    static double storedamount;
-//    static void transferData(double phoneNumber, double amount){
-//        storedphonenumber = phoneNumber;
-//        storedamount = amount;
-//
-//    }
-    static void Note () {
-        System.out.println("You have transferred "+storedamount+" MMk to "+storedphonenumber);
+    static void transfer(String phnum, int amount){
+        System.out.println("You transferred "+amount+" to "+phnum);
+    }
+    static void transfer(String phnum, int amount, String note){
+        System.out.println("You transferred "+amount+" to "+phnum);
+        System.out.println("Your Note : "+note);
     }
 
-    static void Note(String notes) {
-        System.out.println("You have transferred "+storedamount+" MMk to "+storedphonenumber);
-        System.out.println("Your notes : " + notes);
-    }
-        public static void main(String[] args) {
-            System.out.print("Enter the phone number : ");
-            double phnum = scan.nextDouble();
-            System.out.print("Enter amount : ");
-            double amount1 = scan.nextDouble();
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the phone number : ");
+        String userphnum = scan.nextLine();
+        System.out.print("Enter amount : ");
+        int useramount = scan.nextInt();
+        System.out.println("Enter Note : ");
+        String usernote = scan.nextLine();
 
-//            transferData(phnum, amount1);
-
-            storedphonenumber = phnum;
-            storedamount = amount1;
-
-            scan.nextLine();
-
-            System.out.print("Enter note : ");
-            String note1 = scan.nextLine().trim();
-            if (note1.isEmpty()){
-                Note();
-            }
-            else {
-                Note(note1);
-            }
-
-
+        if (usernote==""){
+            transfer(userphnum,useramount);
         }
+        else {
+            transfer(userphnum,useramount,usernote);
+        }
+
+
+    }
     }

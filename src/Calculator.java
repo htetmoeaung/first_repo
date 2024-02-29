@@ -9,11 +9,11 @@ public class Calculator extends JFrame {
         System.out.print("Enter the number = ");
         int num1 = scan.nextInt();
 
-        System.out.print("Enter the number = ");
-        int num2 = scan.nextInt();
-
         System.out.print("Enter sign = ");
         String sign = scan.next();
+
+        System.out.print("Enter the number = ");
+        int num2 = scan.nextInt();
 
         switch (sign){
             case "+" :
