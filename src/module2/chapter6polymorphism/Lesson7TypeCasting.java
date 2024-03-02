@@ -12,6 +12,7 @@ public class Lesson7TypeCasting {
     Child1 obj2 = (Child1) new Parent1(); // down casting
 
 
+
 }
 class Parent1{
     static void show(){
