@@ -7,7 +7,7 @@ public class NumberGuessingGame {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Welcome to the number guessing game");
-        System.out.println("1-10");
+        System.out.println("1-100");
         int number = obj.nextInt(1, 101);
 //        System.out.println(number);
         for (int i = 1; i <= i; i++) {
