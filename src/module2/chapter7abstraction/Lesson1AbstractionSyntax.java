@@ -12,10 +12,14 @@ public class Lesson1AbstractionSyntax {
         parent.job();
     }
 }
-abstract class Parent{
-    void job(){
+
+abstract class Parent {
+
+    // concrete method
+    void job() {
         System.out.println("Online shopping");
     }
 
-   abstract void eat();
+    abstract void eat(); // unimplemented method
+
 }
