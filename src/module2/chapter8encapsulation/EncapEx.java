@@ -38,7 +38,7 @@ class Bankaccount{
     }
 
     public void deposit(long amount){
-        if (amount>=0){
+        if (amount>0){
             balance += amount;
             System.out.println("Deposit of "+amount+" successfully . "+"New Balance "+balance);
         }
@@ -59,7 +59,7 @@ class Bankaccount{
         if (amount > balance){
             System.out.println("Insufficient Amount");
         }
-        else if (amount >= 0){
+        else if (amount > 0){
             balance -= amount;
             System.out.println("Withdraw of "+amount+" successfully . "+"New Balance "+balance);
         }

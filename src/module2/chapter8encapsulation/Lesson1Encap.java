@@ -26,6 +26,9 @@ class Person{
     public int getId() {
         return id;
     }
+    public String getName() {
+        return name;
+    }
 
     public void setId(int id) {
         if (id > 0){
@@ -34,10 +37,6 @@ class Person{
         else {
             System.out.println("Invalid Id Number");
         }
-    }
-
-    public String getName() {
-        return name;
     }
 
     public void setName(String name) {
