@@ -61,6 +61,7 @@ class BankAccount{
     }
     public void deposit(long amount){
         if (amount > 0){
+            balance += amount;
             System.out.println("You have successfully deposited "+amount);
         }
         else {
@@ -71,6 +72,7 @@ class BankAccount{
         if (amount > balance){
             System.out.println("Insufficient amount of balance");
         } else if (amount > 0 ) {
+            balance -= amount;
             System.out.println("You have successfully withdraw "+amount);
         }
         else {
