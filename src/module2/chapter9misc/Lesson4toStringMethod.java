@@ -4,6 +4,8 @@ public class Lesson4toStringMethod {
     public static void main(String[] args) {
         C c  = new C();
         System.out.println(c);
+        System.out.println(c.getClass().hashCode());
+        System.out.println(c.getClass().toString());
 
         Student std1 = new Student(1,"htet");
         System.out.println(std1);
