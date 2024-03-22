@@ -10,7 +10,7 @@ public class Lesson8MathClass {
         System.out.println(Math.multiplyExact(5, 5));
         System.out.println(Math.negateExact(5));
 
-        System.out.println(Math.abs(-5));
+        System.out.println(Math.abs(-5.6));
 
 
     }
