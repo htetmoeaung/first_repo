@@ -19,5 +19,19 @@ public class Lesson5StringMethods {
         System.out.println("fileanime27@gmail.com".endsWith("@gmail.com"));
 
 
+        System.out.println("htet".charAt(1));
+
+        System.out.println("htet is a ten".indexOf('t'));
+        System.out.println("htet is a ten".lastIndexOf('t'));
+
+        String name1 = " ";
+
+        System.out.println(name1.isBlank());
+        System.out.println(name1.isEmpty());
+
+        System.out.println(" htet moe aung ".length());
+        System.out.println(" htet moe aung ".trim().length());
+
+
     }
 }
