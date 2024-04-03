@@ -10,16 +10,17 @@ public class Lesson7FormExercise {
         String userName = scanner.nextLine();
         String userGender = null;
 
-            if (userName.contains("Mg")) {
-                userGender = "male";
-            } else if (userName.contains("Ma")) {
-                userGender = "female";
-            } else {
-                System.out.print("Enter your gender : ");
-                userGender = scanner.next();
-            }
+        if (userName.contains("Mg")) {
+            userGender = "male";
+        } else if (userName.contains("Ma")) {
+            userGender = "female";
+        } else {
+            System.out.print("Enter your gender : ");
+            userGender = scanner.next();
+        }
 
-        scanner.nextLine(); // need to put it because the first next line value goes into the second next line
+        scanner.nextLine();
+        // need to put it because the first next line value goes into the second next line
 
         System.out.print("Enter your email : ");
 
@@ -28,7 +29,7 @@ public class Lesson7FormExercise {
             String userEmail = scanner.nextLine();
 
             if (userEmail.endsWith("@gmail.com")) {
-                System.out.println("your email form is correct and your gender is "+userGender);
+                System.out.println("your email form is correct and your gender is " + userGender);
                 break;
             } else {
                 System.out.println("Your email form is not correct");
