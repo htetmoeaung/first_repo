@@ -19,7 +19,7 @@ public class Lesson7FormExercise {
                 userGender = scanner.next();
             }
 
-        scanner.nextLine();
+        scanner.nextLine(); // need to put it because the first next line value goes into the second next line
 
         System.out.print("Enter your email : ");
 
