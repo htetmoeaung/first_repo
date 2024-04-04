@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Q8 {
     public static void main(String[] args) {
-        // still not done not the correct output
         Scanner scan = new Scanner(System.in);
         int[] numbers = new int[6];
 
