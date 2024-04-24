@@ -23,17 +23,17 @@ public class Lesson1ListIntro {
         Object object[] = {1,"htet",true,'x'};
 
         List<Object> list = new ArrayList<>();
-        list.add(1);
+        list.add(3);
         list.add("htet");
         list.add(3.14);
 
         List arrlist = new ArrayList();
 
-        Object t = list.get(1);
+        Object t = list.get(0);
         Integer int1 = (Integer) t;
 
         System.out.println(list);
-        System.out.println();
+        System.out.println("=============");
 
         List<Integer> list2 = Arrays.asList(1,2,3,4);
         list2.set(0,10);

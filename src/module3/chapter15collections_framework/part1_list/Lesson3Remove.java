@@ -23,6 +23,7 @@ public class Lesson3Remove {
         System.out.println(integerList);
 
         List<String> stringList = new ArrayList<>();
+        //  generic
         stringList.add("aung aung");
         stringList.add("moe moe");
         stringList.add("kyaw kyaw");
