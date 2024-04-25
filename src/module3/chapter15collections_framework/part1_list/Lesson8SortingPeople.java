@@ -38,6 +38,25 @@ public class Lesson8SortingPeople {
             }
         });
 
+        Collections.sort(personList, (o1, o2) -> {
+            if (o1.points>o2.points) return -1;
+            else if (o1.points == o2.points) {
+                return o1.name.compareTo(o2.name);
+            } else {
+                return 1;
+            }
+        });
+
+
+        personList.sort((o1, o2) -> {
+            if (o1.points>o2.points) return -1;
+            else if (o1.points == o2.points) {
+                return o1.name.compareTo(o2.name);
+            } else {
+                return 1;
+            }
+        });
+
         for (Person person : personList){
             System.out.println(person.points + " " + person.name);
         }
