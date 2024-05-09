@@ -7,8 +7,14 @@ import java.util.List;
 public class Lesson4UpperBoundWildCard {
 
     /*
-     ? - this is a wild card
+     ? - this is a wild card character
      */
+
+    /** Upper Bound Wild Card Syntax
+
+       methodName (List <? extends parentClass > listName)
+
+     * */
     static void show(List<? extends Car> list){
         for (Car car : list) {
             System.out.println(car+" ");
@@ -43,10 +49,13 @@ public class Lesson4UpperBoundWildCard {
         hondas.add(new Honda());
         hondas.add(new Honda());
 
-        ArrayList<Integer> integers = new ArrayList<>();
-        integers.add(10);
-        integers.add(20);
-        add(integers);
+        ArrayList<Double> li2 = new ArrayList<>();
+        li2.add(10.0);
+        li2.add(20.0);
+        System.out.print("displaying the sum " + add(li2));
+
+        ArrayList<String> stringArrayList = new ArrayList<>();
+//        add(stringArrayList);
 
 
 
