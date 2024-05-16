@@ -5,7 +5,7 @@ import com.google.gson.Gson;
 public class Lesson2Homework {
     public static void main(String[] args) {
         Rating rate = new Rating(4.5,10);
-        Product product = new Product(1,"apple",4.99,"delicious food","Food","https://apple.com",rate);
+        Product product = new Product(1,"apple",4.99,"delicious,healthy,vegetarian","Food","https://apple.com",rate);
 
         Gson gson = new Gson();
         String product1 = gson.toJson(product);
@@ -15,7 +15,10 @@ public class Lesson2Homework {
 
         System.out.println();
 
-        String str = "{\"id\":1,\"title\":\"apple\",\"price\":4.99,\"description\":\"delicious food\",\"category\":\"Food\",\"image\":\"https://apple.com\",\"rating\":{\"rating\":4.5,\"count\":10}}";
+
+        String str = "{\"id\":1,\"title\":\"apple\",\"price\":4.99,\"description\":\"delicious,healthy,vegetarian\",\"category\":\"Food\",\"image\":\"https://apple.com\",\"rating\":{\"rating\":4.5,\"count\":10}}";
+
+
         Product product2 = gson.fromJson(str,Product.class);
         System.out.println("Json to Java Object ");
         System.out.println(product2);
