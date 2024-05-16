@@ -8,7 +8,10 @@ import java.util.Map;
 
 public class Lesson3JsonListToJavaObject {
     public static void main(String[] args) {
-        String str = "[{\"name\":\"kyaw kyaw\",\"age\":21},{\"name\":\"aung aung\",\"age\":11},{\"name\":\"hlaing hlaing\",\"age\":25},{\"name\":\"htet htet\",\"age\":27}]";
+        String str = "[{\"name\":\"kyaw kyaw\",\"age\":21},"+
+                " {\"name\":\"aung aung\",\"age\":11}," +
+                " {\"name\":\"hlaing hlaing\",\"age\":25},"+
+                " {\"name\":\"htet htet\",\"age\":27}]";
         Gson gson = new Gson();
         List<Map<String, Object>> list = gson.fromJson(str, List.class);
         System.out.println(list);
