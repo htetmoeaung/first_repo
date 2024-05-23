@@ -16,12 +16,12 @@ public class Lesson5InsertDataByUserinput {
             Connection connection = DriverManager.getConnection(URL, USERNAME, "");
             Statement statement = connection.createStatement();
             System.out.print("Enter name : ");
-            String name1 = scan.nextLine();
+            String name = scan.nextLine();
 
             System.out.print("Enter age : ");
-            int age1 = scan.nextInt();
+            int age = scan.nextInt();
 
-            statement.executeUpdate("INSERT INTO student(student_name,age) VALUES('"+name1+"','"+age1+"')");
+            statement.executeUpdate("INSERT INTO student(student_name,age) VALUES('"+name+"',"+age+")");
             System.out.println("success");
         } catch (SQLException e) {
             System.out.println(e);

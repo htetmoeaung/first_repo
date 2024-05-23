@@ -18,7 +18,7 @@ public class Lesson6UpdateDataByUserinput {
             Statement statement = connection.createStatement();
 
             System.out.print("Enter id : ");
-            int id1 = scan.nextInt();
+            int id = scan.nextInt();
 
             System.out.print("Enter new name : ");
             String userInputName = new Scanner(System.in).nextLine();
@@ -26,8 +26,8 @@ public class Lesson6UpdateDataByUserinput {
             System.out.print("Enter new age : ");
             int userInputAge = scan.nextInt();
 
-            statement.executeUpdate("update student set student_name='"+userInputName+"' where student_id="+id1);
-            statement.executeUpdate("update student set age='"+userInputAge+"' where student_id="+id1);
+            statement.executeUpdate("update student set student_name='"+userInputName+"' where student_id="+id);
+            statement.executeUpdate("update student set age="+userInputAge+" where student_id="+id);
 
             System.out.println("success");
         } catch (SQLException e){
@@ -35,6 +35,6 @@ public class Lesson6UpdateDataByUserinput {
         }
     }
     public static void main(String[] args) {
-update();
+        update();
     }
 }
